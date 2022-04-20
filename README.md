@@ -1,6 +1,6 @@
 *где располагается репозиторий с кодом, как посмотреть существующий код;
     
-    Располагается репозиторий по данному адресу https://github.com/lprmrl/go-test
+    Располагается репозиторий по данному адресу https://github.com/lprmrl/go-test.git
     В файле main.go код программы https://github.com/lprmrl/go-test/blob/main/main.go
     В файл README.MD находится инструкция https://github.com/lprmrl/go-test/blob/main/README.md
 
@@ -51,3 +51,10 @@
         git push origin feature-*                    (для младших сотрудников) Отправляете на удаленный репозиторий.
         git push origin release-*                    (Не для новичков) Отправляете на удаленный репозиторий.
         git push origin hotfix-*                     (Не для новичков) Отправляете на удаленный репозиторий.
+
+
+
+
+
+алиас history для команды log --graph
+git config --global alias.history "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
