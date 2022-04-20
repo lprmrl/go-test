@@ -32,7 +32,9 @@
             c. Hotfix-* - для немедленного исправления бага. Например hotfix-listenserver, после удачного изменения вливаеся в ветку main и devops. Создается от ветки main(master).
             
 *как настроить свою среду разработки, требуется прикрепить ссылку на лежащий в проекте конфиг;
-
+    алиас history для команды log --graph
+    git config --global alias.history "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+    https://github.com/lprmrl/go-test/blob/main/config
 
 *инструкция для младших сотрудников по слиянию веток, какие команды надо выполнить, чтобы:
 
