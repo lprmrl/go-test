@@ -5,10 +5,13 @@ import (
 	"log"
 	"net/http"
 )
+func echoString(w http.ResponseWriter, r *http.Request,) {
+	fmt.Fprint(w, "Hello my friend")
+}
+
 
 func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprint(w, "Hello my friend")
+	http.HandleFunc("/", echoString)
 	})
 
 	http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
