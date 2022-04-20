@@ -57,6 +57,3 @@
 
 
 
-
-алиас history для команды log --graph
-git config --global alias.history "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
